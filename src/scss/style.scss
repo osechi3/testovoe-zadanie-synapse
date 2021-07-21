@@ -1,2 +1,33 @@
+// Colors
+$custom-green: #006022;
+$custom-brown: #503314;
+
+$primary: $custom-brown;
+$secondary: $custom-green;
+$gray-100: #f7f7f7;
+$gray-200: #f6f6f6;
+$gray-300: #f2f2f2;
+$gray-900: #343434;
+$black: #1c1c1c;
+
+// Fonts
+@font-face {
+  font-family: Roboto;
+  font-weight: normal;
+  src: url("../assets/fonts/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: bold;
+  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: OfficinaSerifC;
+  font-weight: bold;
+  src: url("../assets/fonts/OfficinaSerifC\ Bold.otf") format("opentype");
+}
+
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 // @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';

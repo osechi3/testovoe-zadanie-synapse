@@ -29,5 +29,32 @@ $black: #1c1c1c;
   src: url("../assets/fonts/OfficinaSerifC\ Bold.otf") format("opentype");
 }
 
+
+.card-title {
+  font-family: OfficinaSerifC;
+  font-size: 1.38rem;
+
+  background-color: $gray-300;
+}
+
+.list-group-item {
+  font-family: Roboto;
+  font-size: .973rem;
+  color: $gray-900;
+}
+
+.list-group-item:nth-child(2n) {
+  background-color: $gray-100;
+}
+
+.price-card {
+  font-family: OfficinaSerifC;
+  font-size: 1.85rem;
+
+  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("../assets/images/brevna.jpg");
+  background-size: 200%;
+  background-position: left;
+}
+
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 // @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';

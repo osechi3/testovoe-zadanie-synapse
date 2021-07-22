@@ -7,6 +7,10 @@
 $primary: c.$brown;
 $secondary: c.$green;
 
+p {
+  font-family: Roboto;
+}
+
 .card-title {
   font-family: OfficinaSerifC;
   font-size: 1.37rem;
@@ -44,6 +48,20 @@ $secondary: c.$green;
     background-position: left;
   }
 }
+
+.delivery {
+  background-color: c.$gray-200;
+
+  &__header {
+    font-family: OfficinaSerifC;
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    font-size: .9rem;
+  }
+}
+
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 // @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';

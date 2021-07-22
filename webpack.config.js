@@ -40,13 +40,13 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({ template: 'src/index.html' }),
-    // new CopyPlugin({
-    //   patterns: [
-    //     {
-    //       from: 'src/assets/images',
-    //       to: path.resolve(__dirname, 'dist/assets/images')
-    //     }
-    //   ]
-    // })
+    new CopyPlugin({
+      patterns: [
+        {
+          from: 'src/assets/images',
+          to: path.resolve(__dirname, 'dist/assets/images')
+        }
+      ]
+    })
   ]
 }

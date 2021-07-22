@@ -9,7 +9,7 @@ $secondary: c.$green;
 
 .card-title {
   font-family: OfficinaSerifC;
-  font-size: 1.38rem;
+  font-size: 1.37rem;
 
   background-color: c.$gray-300;
 }
@@ -31,9 +31,18 @@ $secondary: c.$green;
   font-family: OfficinaSerifC;
   font-size: 1.85rem;
 
-  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("../assets/images/brevna.jpg");
-  background-size: 200%;
-  background-position: left;
+
+  &_basic {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../assets/images/brevna.jpg");
+    background-size: 200%;
+    background-position: left;
+  }
+
+  &_optimal {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../assets/images/brevna2.jpg");
+    background-size: 140%;
+    background-position: left;
+  }
 }
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';

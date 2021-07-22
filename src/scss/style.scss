@@ -1,52 +1,32 @@
-// Colors
-$custom-green: #006022;
-$custom-brown: #503314;
+@use 'fonts';
+@use 'colors' as c;
 
-$primary: $custom-brown;
-$secondary: $custom-green;
-$gray-100: #f7f7f7;
-$gray-200: #f6f6f6;
-$gray-300: #f2f2f2;
-$gray-900: #343434;
-$black: #1c1c1c;
-
-// Fonts
-@font-face {
-  font-family: Roboto;
-  font-weight: normal;
-  src: url("../assets/fonts/Roboto-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: Roboto;
-  font-weight: bold;
-  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: OfficinaSerifC;
-  font-weight: bold;
-  src: url("../assets/fonts/OfficinaSerifC\ Bold.otf") format("opentype");
-}
-
+/*
+  CHANGING BOOTSTRAP DEFAULTS
+*/
+$primary: c.$brown;
+$secondary: c.$green;
 
 .card-title {
   font-family: OfficinaSerifC;
   font-size: 1.38rem;
 
-  background-color: $gray-300;
+  background-color: c.$gray-300;
 }
 
 .list-group-item {
   font-family: Roboto;
   font-size: .973rem;
-  color: $gray-900;
+  color: c.$gray-900;
 }
 
 .list-group-item:nth-child(2n) {
-  background-color: $gray-100;
+  background-color: c.$gray-100;
 }
 
+/*
+  OWN STYLING
+*/
 .price-card {
   font-family: OfficinaSerifC;
   font-size: 1.85rem;

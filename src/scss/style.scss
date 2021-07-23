@@ -7,27 +7,6 @@
 $primary: c.$brown;
 $secondary: c.$green;
 
-p {
-  font-family: Roboto;
-}
-
-.card-title {
-  font-family: OfficinaSerifC;
-  font-size: 1.37rem;
-
-  background-color: c.$gray-300;
-}
-
-.list-group-item {
-  font-family: Roboto;
-  font-size: .973rem;
-  color: c.$gray-900;
-}
-
-.list-group-item:nth-child(2n) {
-  background-color: c.$gray-100;
-}
-
 /*
   OWN STYLING
 */
@@ -76,6 +55,34 @@ p {
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 // @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
+
+/*
+  OVERWRITING BOOTSTRAP
+*/
+.site-logo {
+  max-width: 115%;
+}
+
+p {
+  font-family: Roboto;
+}
+
+.card-title {
+  font-family: OfficinaSerifC;
+  font-size: 1.37rem;
+
+  background-color: c.$gray-300;
+}
+
+.list-group-item {
+  font-family: Roboto;
+  font-size: .973rem;
+  color: c.$gray-900;
+}
+
+.list-group-item:nth-child(2n) {
+  background-color: c.$gray-100;
+}
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;

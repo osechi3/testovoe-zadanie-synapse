@@ -65,3 +65,31 @@ p {
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 // @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-family: OfficinaSerifC;
+  text-transform: uppercase;
+}
+
+
+.navbar-toggler.navbar__menu-button:focus {
+  box-shadow: none;
+}
+
+.navbar__menu-button.collapsed .navbar__close-icon {
+  display: none;
+}
+
+.navbar__menu-button:not(.collapsed) .navbar__close-icon {
+  display: inline;
+}
+
+.navbar__menu-button.collapsed .navbar__menu-icon {
+  display: inline;
+}
+
+.navbar__menu-button:not(.collapsed) .navbar__menu-icon {
+  display: none;
+}

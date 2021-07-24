@@ -10,6 +10,14 @@ $secondary: c.$green;
 /*
   OWN STYLING
 */
+
+.project {
+  &__header {
+    font-family: OfficinaSerifC;
+    font-size: 1.9rem;
+  }
+}
+
 .price-card {
   font-family: OfficinaSerifC;
   font-size: 1.85rem;
@@ -109,4 +117,41 @@ p {
 
 .navbar__menu-button:not(.collapsed) .navbar__menu-icon {
   display: none;
+}
+
+/*
+  CAROUSEL
+*/
+.carousel-cell {
+  width: 20%;
+  bottom: 0;
+  padding-bottom: 3px;
+
+  border-bottom: 2px solid white;
+}
+
+.carousel-cell.is-selected {
+
+  border-bottom: 2px solid c.$green;
+}
+
+.flickity-prev-next-button {
+  height: 100%;
+
+  color: c.$green;
+
+  background-color: rgba(0,0,0,0);
+  border-radius: 0;
+}
+
+.flickity-prev-next-button:hover {
+  background-color: rgba(0,0,0,0);
+}
+
+.flickity-prev-next-button.previous {
+  left: 0;
+}
+
+.flickity-prev-next-button.next {
+  right: -20px;
 }

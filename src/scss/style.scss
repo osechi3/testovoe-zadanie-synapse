@@ -18,6 +18,13 @@ $secondary: c.$green;
   }
 }
 
+.etazh {
+  &__caption {
+    font-family: Roboto;
+    font-size: .9rem;
+  }
+}
+
 .price-card {
   font-family: OfficinaSerifC;
   font-size: 1.85rem;

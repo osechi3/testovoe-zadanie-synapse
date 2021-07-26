@@ -66,6 +66,16 @@ $secondary: c.$green;
   }
 }
 
+.parameters {
+  &__heading {
+    font-size: 1rem;
+  }
+
+  &__icons.img-fluid {
+    height: 95%;
+  }
+}
+
 .price-card {
   font-family: OfficinaSerifC;
   font-size: 1.85rem;

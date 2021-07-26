@@ -76,6 +76,21 @@ $secondary: c.$green;
   }
 }
 
+.order {
+  &__price {
+    font-family: OfficinaSerifC;
+    font-size: 1.89rem;
+  }
+
+  &__button {
+    font-family: OfficinaSerifC;
+    font-size: 1.4rem;
+    text-align: justify;
+
+    border: none;
+  }
+}
+
 .price-card {
   font-family: OfficinaSerifC;
   font-size: 1.85rem;

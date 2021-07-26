@@ -137,7 +137,7 @@ p {
   color: c.$gray-900;
 }
 
-.list-group-item:nth-child(2n) {
+.card .list-group-item:nth-child(2n) {
   background-color: c.$gray-100;
 }
 

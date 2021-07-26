@@ -25,6 +25,47 @@ $secondary: c.$green;
   }
 }
 
+.sharing {
+  &__heading {
+    font-family: Roboto;
+    font-size: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+// Share icon
+.share-number {
+  position: relative;
+  display: inline-block;
+
+  padding: 8px 15px;
+
+  font-family: Roboto;
+  font-size: .8rem;
+
+  border-radius: 20px;
+  background-color: #e7e7e7;
+
+  &__triangle {
+    position: absolute;
+    left: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 0;
+    height: 0;
+
+    border-top: 4px solid transparent;
+    border-bottom:  4px solid transparent;
+    border-right: 8px solid #e7e7e7;
+
+    content: "";
+  }
+}
+
 .price-card {
   font-family: OfficinaSerifC;
   font-size: 1.85rem;

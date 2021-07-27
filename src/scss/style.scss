@@ -204,8 +204,30 @@ $secondary: c.$green;
   }
 }
 
+.beer-handle {
+  background-color: white;
+  background-image: url('../assets/images/hand-icon2.png');
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.beer-handle::before,
+.beer-handle::after {
+  border: none;
+}
+
+.beer-range:focus ~ .beer-handle {
+  background-color: white;
+  background-image: url('../assets/images/hand-icon2.png');
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../node_modules/flickity/css/flickity.css';
+@import '../../node_modules/beerslider/dist/BeerSlider.css';
 // @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
 

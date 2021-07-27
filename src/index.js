@@ -2,12 +2,15 @@ import './scss/style.scss'
 import bootstrap from 'bootstrap'
 import $ from 'jquery'
 import Flickity from 'flickity'
+import BeerSlider from 'beerslider'
 
 console.log('working')
 
-const mainCarousel = document.querySelector('.main-carousel')
+/* SLIDER */
+const slider = new BeerSlider(document.getElementById('beer-slider'))
 
 /* CAROUSEL */
+const mainCarousel = document.querySelector('.main-carousel')
 const flick = new Flickity(mainCarousel, {
   // cellAlign: 'left',
   contain: true,

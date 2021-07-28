@@ -235,7 +235,7 @@ $secondary: c.$green;
   OVERWRITING BOOTSTRAP
 */
 .site-logo {
-  max-width: 115%;
+  max-width: 60px;
 }
 
 p {
@@ -321,4 +321,93 @@ p {
 
 .flickity-prev-next-button.next {
   right: -20px;
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar {
+    height: 100%;
+  }
+
+  .site-logo {
+    max-width: 75px;
+  }
+
+  .navbar-collapse {
+    flex-grow: 0;
+    flex-basis: auto;
+
+    &.show {
+      opacity: 1;
+    }
+
+    &.collapse:not(.show) {
+      display: block;
+
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &.collapsing {
+      height: auto !important;
+      @include transition($transition-fade)
+    }
+  }
+
+  .nav-link {
+    font-size: .9rem;
+  }
+
+  .navbar__menu-title {
+    position: relative;
+    top: 3px;
+
+    font-family: OfficinaSerifC;
+    font-size: .7rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .site-logo {
+    max-width: 155px;
+  }
+
+  .navbar {
+
+    &__subtitle {
+      font-family: OfficinaSerifC;
+      font-size: .95rem;
+      line-height: 1.4;
+    }
+  }
+
+  .navbar-collapse {
+    &.collapse:not(.show) {
+      display: block;
+
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .address-info {
+    font-family: Roboto;
+
+    &__number {
+      font-family: OfficinaSerifC;
+      font-size: 1.25rem;
+    }
+
+    &__hours {
+      font-size: .73rem;
+      font-weight: bold;
+    }
+  }
+
+  .call-back-btn {
+    font-family: OfficinaSerifC;
+  }
 }

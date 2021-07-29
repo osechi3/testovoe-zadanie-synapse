@@ -141,7 +141,7 @@ $secondary: c.$green;
 
 .houses {
 
-  &__heading {
+  &__header {
     font-family: OfficinaSerifC;
     font-size: 1.5rem;
   }
@@ -443,6 +443,22 @@ p {
 
     &__text {
       font-size: 1.02rem;
+    }
+  }
+
+  .houses {
+    &__header {
+      font-size: 1.85rem;
+    }
+  }
+
+  .playlist-img {
+    &__caption {
+      left: 27px;
+      bottom: 16px;
+      width: auto;
+
+      font-size: .98rem;
     }
   }
 }

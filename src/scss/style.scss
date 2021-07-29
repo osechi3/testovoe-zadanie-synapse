@@ -370,6 +370,27 @@ p {
     font-family: OfficinaSerifC;
     font-size: .7rem;
   }
+
+  .breadcrumb {
+    font-family: Roboto;
+  }
+
+  .breadcrumb-item a,
+  .breadcrumb-item.active {
+    color: c.$black;
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: "⟵";
+    color: #d4d4d4;
+  }
+
+  .project {
+
+    &__header {
+      font-size: 3.72rem;
+    }
+  }
 }
 
 @include media-breakpoint-up(xl) {

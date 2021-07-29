@@ -435,6 +435,16 @@ p {
       font-size: 1.17rem;
     }
   }
+
+  .description {
+    &__header {
+      font-size: 1.85rem;
+    }
+
+    &__text {
+      font-size: 1.02rem;
+    }
+  }
 }
 
 @include media-breakpoint-up(xl) {

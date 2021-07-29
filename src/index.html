@@ -53,82 +53,89 @@
     </nav>
   </div>
   <div class="col-lg-11 col-xl-10">
+    <nav class="d-none d-lg-block px-lg-3 pt-lg-4" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="text-decoration-none" href="#">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Проекты</li>
+      </ol>
+    </nav>
+    <h2 class="project__header p-lg-3 mb-lg-0 lh-1">Проект дома «На озере»</h2>
+    <div class="row">
+      <div class="col-lg-8 pe-lg-0">
 
-    <!-- проект дома -->
-    <section class="mt-2 px-lg-2">
-      <nav class="d-none d-lg-block px-lg-2 pt-lg-3" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a class="text-decoration-none" href="#">Главная</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Проекты</li>
-        </ol>
-      </nav>
-      <div class="project container-fluid text-primary px-0 pt-lg-3 px-lg-1">
-        <h2 class="project__header lh-1">Проект дома «На озере»</h2>
-        <img class="image-preview img-fluid" src="assets/images/slider-dom2-fit.jpg" alt="">
-        <div class="main-carousel my-2 mx-0">
-          <img class="carousel-cell mx-2 my-1" src="assets/images/slider-dom2-fit.jpg">
-          <img class="carousel-cell mx-2 my-1" src="assets/images/fasad1-lg.png">
-          <img class="carousel-cell mx-2 my-1" src="assets/images/fasad2-lg.png">
-          <img class="carousel-cell mx-2 my-1" src="assets/images/fasad3-lg.png">
-        </div>
-        <div class="container d-flex mx-1">
-            <figure class="etazh mx-4">
-              <figcaption class="etazh__caption my-3">1 этаж</figcaption>
-              <img class="etazh__img img-fluid" src="assets/images/etazh1-cropped.png" alt="Схема первого этажа">
-            </figure>
-            <figure class="etazh mx-4">
-              <figcaption class="etazh__caption my-3">2 этаж</figcaption>
-              <img class="etazh__img img-fluid" src="assets/images/etazh2.png" alt="Схема второго этажа">
-            </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- параметры проекта дома -->
-    <section class="mt-3">
-      <div class="sharing mt-3 mb-5 mx-1">
-        <h3 class="sharing__heading mb-2 mx-2">Поделиться проектом</h3>
-        <div class="pt-1 align-middle">
-          <a class="sharing__link me-1" href="#">
-            <img src="assets/images/vk-icon.svg" alt="Иконка ВКонтакте">
-          </a>
-          <a class="sharing__link me-1" href="#">
-            <img src="assets/images/odnoklassniki-icon.svg" alt="Иконка Одноклассники" style="border-radius: 50%;">
-          </a>
-          <a class="sharing__link me-2" href="#">
-            <img src="assets/images/facebook-icon.svg" alt="Иконка Facebook">
-          </a>
-          <div class="share-number">
-            1234
-            <span class="share-number__triangle"></span>
+        <!-- проект дома -->
+        <section class="mt-2 ps-lg-2">
+          <div class="project container-fluid text-primary px-0 pt-lg-3 ps-lg-1">
+            <img class="image-preview img-fluid" src="assets/images/slider-dom2-fit.jpg" alt="">
+            <div class="main-carousel my-2 my-lg-3 mx-0">
+              <img class="carousel-cell mx-2 my-1" src="assets/images/slider-dom2-fit.jpg">
+              <img class="carousel-cell mx-2 my-1" src="assets/images/fasad1-lg.png">
+              <img class="carousel-cell mx-2 my-1" src="assets/images/fasad2-lg.png">
+              <img class="carousel-cell mx-2 my-1" src="assets/images/fasad3-lg.png">
+            </div>
+            <div class="container d-flex mx-1 px-lg-0 pt-lg-4">
+                <figure class="etazh mx-4 ms-lg-4 me-lg-5">
+                  <figcaption class="etazh__caption my-3">1 этаж</figcaption>
+                  <img class="etazh__img img-fluid" src="assets/images/etazh1-cropped.png" alt="Схема первого этажа">
+                </figure>
+                <figure class="etazh mx-4 ms-lg-5 me-lg-0">
+                  <figcaption class="etazh__caption my-3">2 этаж</figcaption>
+                  <img class="etazh__img img-fluid" src="assets/images/etazh2.png" alt="Схема второго этажа">
+                </figure>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="parameters container-fluid d-flex px-2 pt-1">
-        <img class="img-fluid parameters__icons" src="assets/images/parameters-icons.png" alt="Иконки параметров дома">
-        <dl class="parameters mx-4 px-2">
-          <dt class="parameters__heading fw-normal">Размеры:</dt>
-          <dd class="parameters__content fw-bold mb-3">12,0 м х 9,5 м</dd>
-          <dt class="parameters__heading fw-normal">Общая площадь:</dt>
-          <dd class="parameters__content fw-bold mb-3">153 м&sup2;</dd>
-          <dt class="parameters__heading fw-normal">Этажность:</dt>
-          <dd class="parameters__content fw-bold mb-3 pb-1">2 этажа</dd>
-          <dt class="parameters__heading fw-normal">Диаметр бревна:</dt>
-          <dd class="parameters__content fw-bold">153 м&sup2;</dd>
-        </dl>
-      </div>
-      <div class="order container-fluid mt-3">
-        <p class="order-price-text mb-2 px-2">Цена за домокомплект:</p>
-        <p class="order__price my-2 ps-2">1 200 000 руб.</p>
-        <button class="order__button btn-secondary text-center shadow
-                      py-3 px-5 my-3 mx-2"
-                type="button">
-          Заказать смету
-        </button>
-        <p class="order__description pt-3 px-3">Проект «На озере» - чудесное решение для южных широт нашей страны. Большие площади остекления откроют чудесные виды на живописные пляжи, а террасы создадут непередаваемую атмосферу  для ужинов и завтраков.</p>
-      </div>
-    </section>
+        </section>
 
+      </div>
+      <div class="col-lg-4 ps-lg-4">
+
+        <!-- параметры проекта дома -->
+        <section class="mt-3 ps-lg-3">
+          <div class="sharing mt-3 mb-5 mx-1 mx-lg-0">
+            <h3 class="sharing__heading mb-2 mx-2">Поделиться проектом</h3>
+            <div class="pt-1 align-middle">
+              <a class="sharing__link me-1" href="#">
+                <img src="assets/images/vk-icon.svg" alt="Иконка ВКонтакте">
+              </a>
+              <a class="sharing__link me-1" href="#">
+                <img src="assets/images/odnoklassniki-icon.svg" alt="Иконка Одноклассники" style="border-radius: 50%;">
+              </a>
+              <a class="sharing__link me-2" href="#">
+                <img src="assets/images/facebook-icon.svg" alt="Иконка Facebook">
+              </a>
+              <div class="share-number">
+                1234
+                <span class="share-number__triangle"></span>
+              </div>
+            </div>
+          </div>
+          <div class="parameters container-fluid d-flex px-2 pt-1 pt-lg-0">
+            <img class="img-fluid parameters__icons" src="assets/images/parameters-icons.png" alt="Иконки параметров дома">
+            <dl class="parameters mx-4 px-2 px-lg-1 pt-lg-0">
+              <dt class="parameters__heading fw-normal">Размеры:</dt>
+              <dd class="parameters__content fw-bold mb-3 mb-lg-2 pb-lg-1">12,0 м х 9,5 м</dd>
+              <dt class="parameters__heading fw-normal">Общая площадь:</dt>
+              <dd class="parameters__content fw-bold mb-3 mb-lg-2 pb-lg-1">153 м&sup2;</dd>
+              <dt class="parameters__heading fw-normal">Этажность:</dt>
+              <dd class="parameters__content fw-bold mb-3 pb-1 mb-lg-2">2 этажа</dd>
+              <dt class="parameters__heading fw-normal">Диаметр бревна:</dt>
+              <dd class="parameters__content fw-bold">153 м&sup2;</dd>
+            </dl>
+          </div>
+          <div class="order container-fluid mt-3 px-lg-0">
+            <p class="order__price-text mb-2 px-2">Цена за домокомплект:</p>
+            <p class="order__price my-2 ps-2">1 200 000 руб.</p>
+            <button class="order__button btn-secondary text-center shadow
+                          py-3 px-5 my-3 mx-2"
+                    type="button">
+              Заказать смету
+            </button>
+            <p class="order__description pt-3 px-3 mt-lg-1 ps-lg-2">Проект «На озере» - чудесное решение для южных широт нашей страны. Большие площади остекления откроют чудесные виды на живописные пляжи, а террасы создадут непередаваемую атмосферу  для ужинов и завтраков.</p>
+          </div>
+        </section>
+
+      </div>
+    </div>
     <!-- карточки с комплектацией -->
     <section class="mt-2">
       <div class="container-fluid">

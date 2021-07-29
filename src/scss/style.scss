@@ -391,6 +391,40 @@ p {
       font-size: 3.72rem;
     }
   }
+
+  .image-preview {
+    max-width: 103%;
+  }
+
+  .sharing {
+
+    &__heading {
+      font-size: 1.15rem;
+    }
+  }
+
+  .parameters {
+
+    &__heading {
+      font-size: 1.12rem
+    }
+
+    &__content {
+      font-size: 1.12rem;
+    }
+  }
+
+  .order {
+    &__price-text {
+      font-size: 1.12rem;
+    }
+  }
+
+  .etazh {
+    &__caption {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 @include media-breakpoint-up(xl) {

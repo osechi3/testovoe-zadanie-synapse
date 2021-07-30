@@ -508,3 +508,13 @@ p {
     font-family: OfficinaSerifC;
   }
 }
+
+@include media-breakpoint-up(xxl) {
+  .navbar-column {
+    width: 13.65%;
+  }
+
+  .site-logo {
+    max-width: 158px;
+  }
+}

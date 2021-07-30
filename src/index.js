@@ -2,6 +2,7 @@ import './scss/style.scss'
 import bootstrap from 'bootstrap'
 import $ from 'jquery'
 import Flickity from 'flickity'
+import imagesLoaded from 'flickity-imagesloaded'
 import BeerSlider from 'beerslider'
 
 console.log('working')
@@ -14,6 +15,7 @@ const mainCarousel = document.querySelector('.main-carousel')
 const flick = new Flickity(mainCarousel, {
   // cellAlign: 'left',
   contain: true,
+  imagesLoaded: true,
 
   draggable: false,
   // autoPlay: true,

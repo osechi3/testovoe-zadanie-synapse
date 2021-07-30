@@ -19,14 +19,14 @@ const flick = new Flickity(mainCarousel, {
 
   draggable: false,
   // autoPlay: true,
-  prevNextButtons: false,
+  prevNextButtons: true,
   pageDots: false,
-  // arrowShape: {
-  //   x0: 5,
-  //   x1: 30, y1: 25,
-  //   x2: 35, y2: 20,
-  //   x3: 15
-  // }
+  arrowShape: {
+    x0: 5,
+    x1: 30, y1: 25,
+    x2: 35, y2: 20,
+    x3: 15
+  }
 })
 
 

@@ -322,11 +322,11 @@ p {
 }
 
 .flickity-prev-next-button.previous {
-  left: 0;
+  left: -5px;
 }
 
 .flickity-prev-next-button.next {
-  right: -20px;
+  right: -5px;
 }
 
 @include media-breakpoint-up(lg) {
@@ -516,5 +516,9 @@ p {
 
   .site-logo {
     max-width: 158px;
+  }
+
+  .image-preview {
+    max-width: 100%;
   }
 }

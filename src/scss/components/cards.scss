@@ -1,0 +1,17 @@
+.price-card {
+  font-family: OfficinaSerifC;
+  font-size: 1.85rem;
+
+
+  &_basic {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../assets/images/brevna.jpg");
+    background-size: 200%;
+    background-position: left;
+  }
+
+  &_optimal {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../assets/images/brevna2.jpg");
+    background-size: 140%;
+    background-position: left;
+  }
+}

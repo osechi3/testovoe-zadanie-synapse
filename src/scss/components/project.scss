@@ -1,0 +1,96 @@
+.project {
+  &__header {
+    font-family: OfficinaSerifC;
+    font-size: 1.9rem;
+  }
+}
+
+.etazh {
+  &__caption {
+    font-family: Roboto;
+    font-size: .9rem;
+  }
+}
+
+/*
+  CAROUSEL
+*/
+.carousel-cell {
+  width: 20%;
+  bottom: 0;
+  padding-bottom: 3px;
+
+  border-bottom: 2px solid white;
+}
+
+.carousel-cell.is-selected {
+
+  border-bottom: 2px solid c.$green;
+}
+
+.flickity-prev-next-button {
+  display: none;
+  height: 100%;
+
+  color: c.$green;
+
+  background-color: rgba(0,0,0,0);
+  border-radius: 0;
+}
+
+.flickity-prev-next-button:hover {
+  background-color: rgba(0,0,0,0);
+}
+
+.flickity-prev-next-button.previous {
+  left: -5px;
+}
+
+.flickity-prev-next-button.next {
+  right: -5px;
+}
+
+
+@include media-breakpoint-up(lg) {
+  .breadcrumb {
+    font-family: Roboto;
+  }
+
+  .breadcrumb-item a,
+  .breadcrumb-item.active {
+    color: c.$black;
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: "⟵";
+    color: #d4d4d4;
+  }
+
+  .project {
+
+    &__header {
+      font-size: 3.72rem;
+    }
+  }
+
+  .image-preview {
+    max-width: 103%;
+  }
+
+  .etazh {
+    &__caption {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(xxl) {
+  .image-preview {
+    max-width: 100%;
+  }
+
+  .flickity-prev-next-button {
+    display: block;
+  }
+}

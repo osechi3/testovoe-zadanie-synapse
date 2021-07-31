@@ -124,7 +124,7 @@ $secondary: c.$green;
   }
 
   &__text {
-    font-size: .9rem;
+    font-size: .87rem;
   }
 }
 
@@ -135,7 +135,8 @@ $secondary: c.$green;
   }
 
   &__text {
-    font-size: .9rem;
+    font-size: .98rem;
+    line-height: 1.45;
   }
 }
 
@@ -309,6 +310,7 @@ p {
 }
 
 .flickity-prev-next-button {
+  display: none;
   height: 100%;
 
   color: c.$green;
@@ -524,6 +526,10 @@ p {
 
   .example-photo {
     max-width: 116%;
+  }
+
+  .flickity-prev-next-button {
+    display: block;
   }
 
   .footer {

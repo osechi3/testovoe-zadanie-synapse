@@ -525,4 +525,55 @@ p {
   .example-photo {
     max-width: 116%;
   }
+
+  .footer {
+    font-family: Roboto;
+    font-size: .94rem;
+    color: c.$gray-800;
+
+    &__header {
+      font-size: .94rem;
+    }
+
+    &__link-list {
+      list-style: none;
+    }
+
+    &__link {
+      color: inherit;
+    }
+
+    &__column {
+      position: relative;
+    }
+
+    &__column:nth-child(2) {
+      right: 13px;
+    }
+
+    &__column:nth-child(3) {
+      left: 113px;
+    }
+
+    &__column:nth-child(4) {
+      left: 60px;
+    }
+
+    &__synapse-link {
+      position: relative;
+      left: 74px;
+    }
+  }
+
+  .copyright {
+    font-size: .8rem;
+
+    &_vol-plotnik {
+      font-family: PTSans;
+    }
+
+    &_synapse {
+      font-family: Arial;
+    }
+  }
 }

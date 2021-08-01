@@ -1,3 +1,5 @@
+.navbar-column { position: relative; }
+
 .site-logo { max-width: 60px; }
 
 .navbar {
@@ -42,29 +44,51 @@
                       linear-gradient(rgba(0,0,0, .55), rgba(0,0,0, .55)),
                       url("../assets/images/tree-bg-lg.png");
     background-position: 39% 47%;
-   }
-
-  .site-logo { max-width: 75px; }
-
-  .navbar-collapse {
-    flex-grow: 0;
-    flex-basis: auto;
 
 
-    &.show { opacity: 1; }
-
-    &.collapse:not(.show) {
-      display: block;
-
-      opacity: 0;
-      visibility: hidden;
+    &__menu-button {
+      position: relative;
+      top: 333px;
     }
 
-    &.collapsing {
-      height: auto !important;
-      @include transition($transition-fade)
+    &_expanded {
+      position: absolute;
+      width: 209px;
+
+      z-index: 2;
+
+
+      .site-logo {
+        max-width: 106px;
+      }
+
+      .nav-link {
+        font-size: 1rem;
+      }
+
+      .navbar-brand {
+        position: relative;
+        right: 5px;
+        bottom: 16px;
+      }
+
+      .navbar__menu-button {
+        top: 0;
+      }
+
+      .navbar__contact-block {
+        position: relative;
+        top: 100px;
+        right: 9px;
+      }
     }
   }
+
+  .navbar:not(.navbar_expanded) .navbar-collapse {
+    display: none;
+  }
+
+  .site-logo { max-width: 75px; }
 
   .nav-link { font-size: .9rem; }
 
@@ -75,30 +99,6 @@
     font-family: $heading-font-stack;
     font-size: .7rem;
   }
-}
-
-
-@include media-breakpoint-up(xl) {
-  .site-logo { max-width: 155px; }
-
-  .navbar {
-    &__subtitle {
-      font-family: $heading-font-stack;
-      font-size: .95rem;
-      line-height: 1.4;
-    }
-  }
-
-  .navbar-collapse {
-    &.collapse:not(.show) {
-      display: block;
-
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
-  .nav-link { font-size: 1rem; }
 
   .address-info {
     font-family: $paragraph-font-stack;
@@ -120,12 +120,39 @@
   }
 }
 
+
+@include media-breakpoint-up(xl) {
+  .site-logo { max-width: 155px; }
+
+  .navbar {
+    &__subtitle {
+      font-family: $heading-font-stack;
+      font-size: .95rem;
+      line-height: 1.4;
+    }
+
+    &__contact-block {
+      position: relative;
+      top: 58px;
+    }
+  }
+
+  .nav-link { font-size: 1rem; }
+}
+
 @include media-breakpoint-up(xxl) {
   .navbar {
     background-image: linear-gradient(rgba(80, 51, 20, .5), rgba(80, 51, 20, .5)),
                       linear-gradient(rgba(0,0,0, .55), rgba(0,0,0, .55)),
                       url("../assets/images/tree-bg-lg.png");
     background-position: 34% 36.5%;
+
+
+    &__contact-block {
+      position: relative;
+      top: 62px;
+      left: 15px;
+    }
   }
 
   .navbar-column { width: 13.65%; }

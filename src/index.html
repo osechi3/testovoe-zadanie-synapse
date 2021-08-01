@@ -30,8 +30,8 @@
         <img class="navbar__close-icon m-2" src="assets/icons/x.svg" alt="Иконка закрытия меню">
         <span class="navbar__menu-title d-none d-lg-inline text-uppercase text-white mt-lg-1">Меню</span>
       </button>
-      <div id="main-nav" class="collapse navbar-collapse mb-lg-2 order-lg-1
-                                mt-xl-5 pt-xl-4 pb-xl-5 pe-xxl-4">
+      <div id="main-nav" class="collapse navbar-collapse d-xl-flex flex-xl-column order-lg-1
+                                mb-lg-2 mt-xl-5 pt-xl-4 pb-xl-5 pe-xxl-4">
         <ul class="overflow-hidden navbar-nav flex-xl-column text-center text-xl-start
                    my-0 py-2 pt-xl-3 pt-xxl-2">
           <li><a class="nav-link btn-outline btn-primary bg-transparent pt-2 pb-3" href="#">О компании</a></li>
@@ -41,17 +41,26 @@
           <li><a class="nav-link btn-outline btn-primary bg-transparent pt-2 pb-3" href="#">Новости</a></li>
           <li><a class="nav-link btn-outline btn-primary bg-transparent pt-2 pb-3" href="#">Контакты</a></li>
         </ul>
+        <div class="navbar__contact-block d-none d-lg-block">
+          <address class="address-info order-xl-2 text-white
+                          pb-xl-2 pt-xl-3 mt-xl-5">
+            <a class="address-info__number btn btn-outline btn-primary
+                      bg-transparent border-0 text-white pb-xl-0"
+                href="tel:+88002000679">
+              8 800 2000 679
+            </a>
+            <p class="address-info__hours text-center text-lg-start text-xl-center
+                      small ps-lg-3 ps-xl-0 pe-xl-3">
+              пн - пт с 9:00 до 18:00
+            </p>
+          </address>
+          <a class="call-back-btn btn btn-outline btn-primary order-xl-3
+                    bg-transparent border-0 text-uppercase text-white
+                      " href="tel:+88002000679">
+            Обратный звонок
+          </a>
+        </div>
       </div>
-      <address class="address-info d-none d-xl-block order-xl-2 text-white
-                      pb-xl-2 pt-xl-3 mt-xl-5">
-        <a class="address-info__number btn btn-outline btn-primary bg-transparent text-white pb-xl-0" href="tel:+88002000679">8 800 2000 679</a>
-        <p class="address-info__hours text-center pe-xl-3 small">пн - пт с 9:00 до 18:00</p>
-      </address>
-      <a class="call-back-btn btn btn-outline btn-primary order-xl-3 d-none d-xl-inline-block
-                bg-transparent border-0 text-uppercase text-white
-                  " href="tel:+88002000679">
-        Обратный звонок
-      </a>
     </nav>
   </div>
   <div class="col-lg-11 col-xl-10 pe-xxl-5">

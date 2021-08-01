@@ -54,3 +54,29 @@ const imagePreview = document.querySelector('.image-preview')
 function showImage (event) {
   imagePreview.src = event.target.src
 }
+
+/* NAVBAR BUTTON */
+$('.navbar__menu-button').on('click', expandNav)
+
+function expandNav () {
+  $('.navbar').toggleClass('navbar_expanded')
+  $('.navbar__menu-title').toggleClass('d-lg-inline')
+  $('.navbar__menu-button').toggleClass([
+    // remove
+    'order-lg-2',
+    'px-lg-2',
+
+    // add
+    'order-lg-0',
+    'px-lg-1',
+    'align-self-lg-end'
+  ])
+
+  $('.navbar-collapse>ul').toggleClass([
+    'text-lg-start',
+    'px-lg-2'
+  ])
+
+  $('.address-info').toggleClass('pb-lg-1')
+  $('.address-info__number').toggleClass('pb-lg-0')
+}

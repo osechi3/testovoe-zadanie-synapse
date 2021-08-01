@@ -18,6 +18,10 @@
   background-repeat: no-repeat;
 }
 
+.beer-reveal {
+  border-right: 2px solid #fff;
+}
+
 .beer-handle::before,
 .beer-handle::after {
   border: none;

@@ -5,10 +5,10 @@ import Flickity from 'flickity'
 import imagesLoaded from 'flickity-imagesloaded'
 import BeerSlider from 'beerslider'
 
-console.log('working')
 
 /* SLIDER */
 const slider = new BeerSlider(document.getElementById('beer-slider'))
+
 
 /* CAROUSEL */
 const mainCarousel = document.querySelector('.main-carousel')
@@ -29,7 +29,7 @@ const flick = new Flickity(mainCarousel, {
   }
 })
 
-/* Displaying selected image */
+// Displaying selected image
 const imagePreview = document.querySelector('.image-preview')
 flick.on('select', (index) => {
   imagePreview.src = flick.selectedElement.src
@@ -38,6 +38,7 @@ flick.on('select', (index) => {
 flick.on('staticClick', (e, pointer, cellElement, cellIndex) => {
   flick.select(cellIndex, false, false)
 })
+
 
 /* NAVBAR BUTTON */
 $('.navbar__menu-button').on('click', expandNav)

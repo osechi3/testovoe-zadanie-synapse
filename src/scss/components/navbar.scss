@@ -1,6 +1,4 @@
-.site-logo {
-  max-width: 60px;
-}
+.site-logo { max-width: 60px; }
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
@@ -30,21 +28,16 @@
 
 
 @include media-breakpoint-up(lg) {
-  .navbar {
-    height: 100%;
-  }
+  .navbar { height: 100%; }
 
-  .site-logo {
-    max-width: 75px;
-  }
+  .site-logo { max-width: 75px; }
 
   .navbar-collapse {
     flex-grow: 0;
     flex-basis: auto;
 
-    &.show {
-      opacity: 1;
-    }
+
+    &.show { opacity: 1; }
 
     &.collapse:not(.show) {
       display: block;
@@ -59,9 +52,7 @@
     }
   }
 
-  .nav-link {
-    font-size: .9rem;
-  }
+  .nav-link { font-size: .9rem; }
 
   .navbar__menu-title {
     position: relative;
@@ -74,12 +65,9 @@
 
 
 @include media-breakpoint-up(xl) {
-  .site-logo {
-    max-width: 155px;
-  }
+  .site-logo { max-width: 155px; }
 
   .navbar {
-
     &__subtitle {
       font-family: $heading-font-stack;
       font-size: .95rem;
@@ -96,12 +84,11 @@
     }
   }
 
-  .nav-link {
-    font-size: 1rem;
-  }
+  .nav-link { font-size: 1rem; }
 
   .address-info {
     font-family: $paragraph-font-stack;
+
 
     &__number {
       font-family: $heading-font-stack;
@@ -120,11 +107,7 @@
 }
 
 @include media-breakpoint-up(xxl) {
-  .navbar-column {
-    width: 13.65%;
-  }
+  .navbar-column { width: 13.65%; }
 
-  .site-logo {
-    max-width: 158px;
-  }
+  .site-logo { max-width: 158px; }
 }

@@ -1,7 +1,5 @@
 .project {
-  &__header {
-    font-size: 1.9rem;
-  }
+  &__header { font-size: 1.9rem; }
 }
 
 .etazh {
@@ -23,7 +21,6 @@
 }
 
 .carousel-cell.is-selected {
-
   border-bottom: 2px solid c.$green;
 }
 
@@ -35,45 +32,32 @@
 
   background-color: rgba(0,0,0,0);
   border-radius: 0;
-}
 
-.flickity-prev-next-button:hover {
-  background-color: rgba(0,0,0,0);
-}
+  &:hover {
+    background-color: rgba(0,0,0,0);
+  }
 
-.flickity-prev-next-button.previous {
-  left: -5px;
-}
+  &.previous { left: -5px; }
 
-.flickity-prev-next-button.next {
-  right: -5px;
+  &.next { right: -5px; }
 }
 
 
 @include media-breakpoint-up(lg) {
   .project {
-
-    &__header {
-      font-size: 3.72rem;
-    }
+    &__header { font-size: 3.72rem; }
   }
 
-  .image-preview {
-    max-width: 103%;
-  }
+  .image-preview { max-width: 103%; }
 
   .etazh {
-    &__caption {
-      font-size: 1.2rem;
-    }
+    &__caption { font-size: 1.2rem; }
   }
 }
 
 
 @include media-breakpoint-up(xxl) {
-  .image-preview {
-    max-width: 100%;
-  }
+  .image-preview { max-width: 100%; }
 
   .flickity-prev-next-button {
     display: block;

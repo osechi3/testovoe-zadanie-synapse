@@ -1,7 +1,5 @@
 .description {
-  &__header {
-    font-size: 1.5rem;
-  }
+  &__header { font-size: 1.5rem; }
 
   &__text {
     font-size: .98rem;
@@ -36,12 +34,8 @@
 
 @include media-breakpoint-up(lg) {
   .description {
-    &__header {
-      font-size: 1.85rem;
-    }
+    &__header { font-size: 1.85rem; }
 
-    &__text {
-      font-size: 1.02rem;
-    }
+    &__text { font-size: 1.02rem; }
   }
 }

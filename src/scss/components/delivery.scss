@@ -1,24 +1,17 @@
 .delivery {
   background-color: c.$gray-200;
 
-  &__header {
-    font-size: 1.5rem;
-  }
 
-  &__text {
-    font-size: .87rem;
-  }
+  &__header { font-size: 1.5rem; }
+
+  &__text { font-size: .87rem; }
 }
 
 
 @include media-breakpoint-up(lg) {
   .delivery {
-    &__header {
-      font-size: 1.85rem;
-    }
+    &__header { font-size: 1.85rem; }
 
-    &__text {
-      font-size: 1.17rem;
-    }
+    &__text { font-size: 1.17rem; }
   }
 }

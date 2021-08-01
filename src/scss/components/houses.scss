@@ -1,16 +1,12 @@
 .houses {
-
-  &__header {
-    font-size: 1.5rem;
-  }
+  &__header { font-size: 1.5rem; }
 }
 
 .playlist {
   position: relative;
 
-  &.btn {
-    border-radius: 0;
-  }
+
+  &.btn { border-radius: 0; }
 
   &__icon {
     position: absolute;
@@ -28,6 +24,7 @@
   position: relative;
   left: -15%;
   max-width: 128%;
+
 
   &__background {
     position: absolute;
@@ -53,7 +50,6 @@
 }
 
 .feedback {
-
   &.btn:hover .feedback__title {
     text-decoration: underline;
   }
@@ -71,9 +67,7 @@
 
 @include media-breakpoint-up(lg) {
   .houses {
-    &__header {
-      font-size: 1.85rem;
-    }
+    &__header { font-size: 1.85rem; }
   }
 
   .playlist-img {
@@ -89,7 +83,5 @@
 
 
 @include media-breakpoint-up(xxl) {
-  .example-photo {
-    max-width: 116%;
-  }
+  .example-photo { max-width: 116%; }
 }

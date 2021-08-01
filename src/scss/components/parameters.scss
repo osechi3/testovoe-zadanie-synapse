@@ -4,12 +4,12 @@
     font-size: 1rem;
   }
 
-  &__link {
-    text-decoration: none;
-  }
+  &__link { text-decoration: none; }
 }
 
-// Share icon
+/*
+  SHARE ICON
+*/
 .share-number {
   position: relative;
   display: inline-block;
@@ -50,9 +50,7 @@
     font-size: 1rem;
   }
 
-  &__icons.img-fluid {
-    height: 95%;
-  }
+  &__icons.img-fluid { height: 95%; }
 }
 
 .order {
@@ -72,26 +70,16 @@
 
 @include media-breakpoint-up(lg) {
   .sharing {
-
-    &__heading {
-      font-size: 1.15rem;
-    }
+    &__heading { font-size: 1.15rem; }
   }
 
   .parameters {
+    &__heading { font-size: 1.12rem }
 
-    &__heading {
-      font-size: 1.12rem
-    }
-
-    &__content {
-      font-size: 1.12rem;
-    }
+    &__content { font-size: 1.12rem; }
   }
 
   .order {
-    &__price-text {
-      font-size: 1.12rem;
-    }
+    &__price-text { font-size: 1.12rem; }
   }
 }

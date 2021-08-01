@@ -1,5 +1,12 @@
 .site-logo { max-width: 60px; }
 
+.navbar {
+  background-image: linear-gradient(rgba(80, 51, 20, .5), rgba(80, 51, 20, .5)),
+                    linear-gradient(rgba(0,0,0, .55), rgba(0,0,0, .55)),
+                    url("../assets/images/tree-bg-sm.png");
+  background-position: bottom;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: white;
   font-family: $heading-font-stack;
@@ -28,7 +35,14 @@
 
 
 @include media-breakpoint-up(lg) {
-  .navbar { height: 100%; }
+  .navbar {
+    height: 100%;
+
+    background-image: linear-gradient(rgba(80, 51, 20, .5), rgba(80, 51, 20, .5)),
+                      linear-gradient(rgba(0,0,0, .55), rgba(0,0,0, .55)),
+                      url("../assets/images/tree-bg-lg.png");
+    background-position: 39% 47%;
+   }
 
   .site-logo { max-width: 75px; }
 
@@ -107,6 +121,13 @@
 }
 
 @include media-breakpoint-up(xxl) {
+  .navbar {
+    background-image: linear-gradient(rgba(80, 51, 20, .5), rgba(80, 51, 20, .5)),
+                      linear-gradient(rgba(0,0,0, .55), rgba(0,0,0, .55)),
+                      url("../assets/images/tree-bg-lg.png");
+    background-position: 34% 36.5%;
+  }
+
   .navbar-column { width: 13.65%; }
 
   .site-logo { max-width: 158px; }

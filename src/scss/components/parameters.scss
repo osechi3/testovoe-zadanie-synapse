@@ -1,6 +1,6 @@
 .sharing {
   &__heading {
-    font-family: Roboto;
+    font-family: $paragraph-font-stack;
     font-size: 1rem;
   }
 
@@ -16,7 +16,7 @@
 
   padding: 8px 15px;
 
-  font-family: Roboto;
+  font-family: $paragraph-font-stack;
   font-size: .8rem;
 
   border-radius: 20px;
@@ -41,12 +41,12 @@
 
 .parameters {
   &__heading {
-    font-family: Roboto;
+    font-family: $paragraph-font-stack;
     font-size: 1rem;
   }
 
   &__content {
-    font-family: Roboto;
+    font-family: $paragraph-font-stack;
     font-size: 1rem;
   }
 
@@ -57,12 +57,12 @@
 
 .order {
   &__price {
-    font-family: OfficinaSerifC;
+    font-family: $heading-font-stack;
     font-size: 1.89rem;
   }
 
   &__button {
-    font-family: OfficinaSerifC;
+    font-family: $heading-font-stack;
     font-size: 1.4rem;
     text-align: justify;
 

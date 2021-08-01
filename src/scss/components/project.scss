@@ -1,13 +1,12 @@
 .project {
   &__header {
-    font-family: OfficinaSerifC;
     font-size: 1.9rem;
   }
 }
 
 .etazh {
   &__caption {
-    font-family: Roboto;
+    font-family: $paragraph-font-stack;
     font-size: .9rem;
   }
 }
@@ -52,20 +51,6 @@
 
 
 @include media-breakpoint-up(lg) {
-  .breadcrumb {
-    font-family: Roboto;
-  }
-
-  .breadcrumb-item a,
-  .breadcrumb-item.active {
-    color: c.$black;
-  }
-
-  .breadcrumb-item + .breadcrumb-item::before {
-    content: "⟵";
-    color: #d4d4d4;
-  }
-
   .project {
 
     &__header {

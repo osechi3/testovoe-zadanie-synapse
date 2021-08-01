@@ -8,11 +8,14 @@
 $primary: c.$brown;
 $secondary: c.$green;
 
-
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../node_modules/flickity/css/flickity.css';
 @import '../../node_modules/beerslider/dist/BeerSlider.css';
 
+$paragraph-font-stack: Roboto, $font-family-base;
+$heading-font-stack: OfficinaSerifC, $font-family-base;
+$copyright-font-stack: PTSans, $font-family-base;
+$synapse-font-stack: Arial, $font-family-base;
 
 /*
   OWN STYLING
@@ -31,22 +34,42 @@ $secondary: c.$green;
   CHANGING BOOTSTRAP STYLING
 */
 p {
-  font-family: Roboto;
+  font-family: $paragraph-font-stack;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-stack;
 }
 
 .card-title {
-  font-family: OfficinaSerifC;
+  font-family: $heading-font-stack;
   font-size: 1.37rem;
 
   background-color: c.$gray-300;
 }
 
 .list-group-item {
-  font-family: Roboto;
+  font-family: $paragraph-font-stack;
   font-size: .973rem;
   color: c.$gray-900;
 }
 
 .card .list-group-item:nth-child(2n) {
   background-color: c.$gray-100;
+}
+
+@include media-breakpoint-up(lg) {
+  .breadcrumb {
+    font-family: $paragraph-font-stack;
+  }
+
+  .breadcrumb-item a,
+  .breadcrumb-item.active {
+    color: c.$black;
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: "⟵";
+    color: #d4d4d4;
+  }
 }

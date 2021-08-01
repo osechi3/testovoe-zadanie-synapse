@@ -4,7 +4,7 @@
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  font-family: OfficinaSerifC;
+  font-family: $heading-font-stack;
   text-transform: uppercase;
 }
 
@@ -67,7 +67,7 @@
     position: relative;
     top: 3px;
 
-    font-family: OfficinaSerifC;
+    font-family: $heading-font-stack;
     font-size: .7rem;
   }
 }
@@ -81,7 +81,7 @@
   .navbar {
 
     &__subtitle {
-      font-family: OfficinaSerifC;
+      font-family: $heading-font-stack;
       font-size: .95rem;
       line-height: 1.4;
     }
@@ -101,10 +101,10 @@
   }
 
   .address-info {
-    font-family: Roboto;
+    font-family: $paragraph-font-stack;
 
     &__number {
-      font-family: OfficinaSerifC;
+      font-family: $heading-font-stack;
       font-size: 1.25rem;
     }
 
@@ -115,7 +115,7 @@
   }
 
   .call-back-btn {
-    font-family: OfficinaSerifC;
+    font-family: $heading-font-stack;
   }
 }
 

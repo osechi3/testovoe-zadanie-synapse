@@ -29,31 +29,15 @@ const flick = new Flickity(mainCarousel, {
   }
 })
 
-
-
-mainCarousel.addEventListener('click', handleClick)
-
-function handleClick (event) {
-  if (event.target.classList.contains('carousel-cell')) {
-    selectImage(event)
-    showImage(event)
-  }
-}
-
-function selectImage (event) {
-  const siblings = event.target.parentElement.childNodes
-
-  siblings.forEach(sibling => {
-    sibling.classList.remove('is-selected')
-  })
-
-  event.target.classList.add('is-selected')
-}
-
+/* Displaying selected image */
 const imagePreview = document.querySelector('.image-preview')
-function showImage (event) {
-  imagePreview.src = event.target.src
-}
+flick.on('select', (index) => {
+  imagePreview.src = flick.selectedElement.src
+})
+
+flick.on('staticClick', (e, pointer, cellElement, cellIndex) => {
+  flick.select(cellIndex, false, false)
+})
 
 /* NAVBAR BUTTON */
 $('.navbar__menu-button').on('click', expandNav)

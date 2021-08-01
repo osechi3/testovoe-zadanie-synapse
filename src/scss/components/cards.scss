@@ -4,18 +4,16 @@
 
 
   &_basic {
-    background-image: linear-gradient(rgba(0,0,0,0.3),
-                    rgba(0,0,0,0.3)),
-                      url("../assets/images/brevna.jpg");
-    background-size: 200%;
-    background-position: left;
+    background-image: linear-gradient(rgba(0,0,0, .4),
+                    rgba(0,0,0, .4)),
+                      url("../assets/images/brevna1.jpg");
+    background-position: 50% 65%;
   }
 
   &_optimal {
-    background-image: linear-gradient(rgba(0,0,0,0.3),
-                    rgba(0,0,0,0.3)),
+    background-image: linear-gradient(rgba(0,0,0, .4),
+                    rgba(0,0,0, .4)),
                     url("../assets/images/brevna2.jpg");
-    background-size: 140%;
-    background-position: left;
+    background-position: 50% 38%;
   }
 }

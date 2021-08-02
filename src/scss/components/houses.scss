@@ -5,6 +5,9 @@
 .playlist {
   position: relative;
 
+  &>figure {
+    max-width: 626px;
+  }
 
   &.btn { border-radius: 0; }
 

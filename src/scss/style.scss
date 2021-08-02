@@ -41,6 +41,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-stack;
 }
 
+.card {
+  background-color: c.$gray-300;
+}
+
 .card-title {
   font-family: $heading-font-stack;
   font-size: 1.37rem;

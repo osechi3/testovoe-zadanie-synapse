@@ -82,13 +82,13 @@
                 Проект дома «На озере»
               </h2>
               <h2 class="project__header d-lg-none lh-1
-                         p-3 mt-2 mb-1 ps-lg-1 mt-lg-0 px-xl-3 px-xxl-3">
+                         p-3 ps-2 mt-2 mb-1 ps-lg-1 mt-lg-0 px-xl-3 px-xxl-3">
                 Проект дома «На озере»
               </h2>
               <div class="project container-fluid text-primary
                           px-0 pt-lg-3 ps-lg-1 ps-xl-3 pt-xxl-4 mt-xxl-1">
                 <div class="row">
-                  <div class="col-xxl-8 pe-xxl-0 mb-1">
+                  <div class="col-xxl-8 pe-xxl-0 mb-1 px-0">
                     <a class="image-preview__button btn d-none d-lg-inline position-absolute
                               shadow-none bg-white rounded-0 px-2 py-1"
                         href="#">
@@ -102,7 +102,7 @@
                       <img class="carousel-cell mx-2 my-1" src="assets/images/fasad3-lg.png">
                     </div>
                   </div>
-                  <div class="col-xxl-4">
+                  <div class="col-xxl-4 px-0">
                     <div class="container d-flex flex-xxl-column mx-lg-1 px-0 pt-lg-4 pt-xl-0 mx-xl-0">
                       <figure class="etazh ms-3 me-4 ms-lg-4 me-lg-5 ms-xl-5 ps-xxl-5 mb-xxl-0 ms-xxl-0">
                         <figcaption class="etazh__caption my-3 mb-xxl-3 mt-xxl-0">1 этаж</figcaption>
@@ -119,7 +119,7 @@
             </section>
 
           </div>
-          <div class="col-lg-4 col-xxl-3 order-xxl-1 mt-lg-5 pt-lg-4 ps-lg-4 mt-xxl-0 pt-xxl-0">
+          <div class="col-lg-4 col-xxl-3 order-xxl-1 px-0 mt-lg-5 pt-lg-4 ps-lg-4 mt-xxl-0 pt-xxl-0">
 
             <!-- параметры проекта дома (parameters.scss) -->
             <section class="mt-2 mt-lg-5 pt-lg-5 ps-lg-3
@@ -175,57 +175,56 @@
         <div class="row justify-content-xxl-end mx-0">
           <div class="col-xxl-9 ps-xxl-4 pe-xxl-0">
             <!-- карточки с комплектацией (cards.scss) -->
-            <section class="mt-lg-2 mt-xxl-3">
+            <section class="mt-2 mt-lg-2 mt-xxl-3">
               <div class="container-fluid px-0">
-                <div class="row">
-                  <div class="col p-0 my-2 ms-lg-4 me-1 mx-xxl-0">
-                    <div class="card border-0 mx-xl-3">
-                      <div class="card-body p-0 ms-xxl-2 me-xxl-0">
-                        <h5 class="card-title d-flex align-items-center px-4 py-4 mx-0 mt-1 ms-1 mt-lg-2">
-                          <img class="d-none d-lg-block pe-lg-4 ms-lg-3 me-lg-2" src="assets/icons/card-icon1.png" alt="Иконка дома в базовой комплектации">
+                <div class="row pt-1">
+                  <div class="col px-0">
+                    <div class="card rounded-0 border-0">
+                      <div class="card-body pt-4 px-0 pb-0">
+                        <h5 class="card-title mb-4 px-3 pb-2">
+                          <img class="d-none" src="assets/icons/card-icon1.png" alt="Иконка дома в базовой комплектации">
                           Комплектация "Базовая" (домокомплект)
                         </h5>
-                        <ul class="list-group list-group-flush ms-1 ms-xl-0 mx-xxl-1">
-                          <li class="list-group-item mx-1 ps-4 border-0">Рубленый стеновой комплект сруб в чашу</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Баки половые брус 100 на 200</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Пере... межэтажный брус 150 на 200</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Межвенцовый утеплитель (...)</li>
-                          <li class="list-group-item mx-1 pt-1 ps-4 border-0">Стропила</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Обрешетка</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Нигеля березовые</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Рубероид, ... ... кровля</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Метизы</li>
+                        <ul class="list-group list-group-flush">
+                          <!-- REMOVE text-nowrap -->
+                          <li class="list-group-item border-0 text-nowrap ps-3">Рубленый стеновой комплект сруб в чашу</li>
+                          <li class="list-group-item border-0">Баки половые брус 100 на 200</li>
+                          <li class="list-group-item border-0 pb-1">Пере... межэтажный брус 150 на 200</li>
+                          <li class="list-group-item border-0">Межвенцовый утеплитель (...)</li>
+                          <li class="list-group-item border-0">Стропила</li>
+                          <li class="list-group-item border-0">Обрешетка</li>
+                          <li class="list-group-item border-0">Нигеля березовые</li>
+                          <li class="list-group-item border-0">Рубероид, ... ... кровля</li>
+                          <li class="list-group-item border-0">Метизы</li>
                         </ul>
                       </div>
-                      <div class="price-card price-card_basic text-center bg-dark text-light
-                                  py-4 my-2 ms-xxl-3 me-xxl-1">
+                      <div class="price-card price-card_basic text-center text-white p-4">
                         1 200 000 руб.
                       </div>
                     </div>
                   </div>
-                  <div class="col p-0 my-3 pt-1 ms-1 me-lg-3 my-lg-2 pt-lg-0">
-                    <div class="card border-0 me-xl-4">
-                      <div class="card-body p-0 me-xxl-0 ms-xxl-3">
-                        <h5 class="card-title d-flex align-items-center px-4 py-4 mx-0 mt-1 mt-lg-2">
-                          <img class="d-none d-lg-block pe-lg-4 ps-lg-3 me-lg-2" src="assets/icons/card-icon2.png" alt="Иконка дома в оптимальной комплектации">
+                  <div class="col mt-5 px-0">
+                    <div class="card rounded-0 border-0">
+                      <div class="card-body pt-4 px-0 pb-0">
+                        <h5 class="card-title mb-4 px-3 pb-2">
+                          <img class="d-none" src="assets/icons/card-icon2.png" alt="Иконка дома в оптимальной комплектации">
                           Комплектация "Оптимальная" (домокомплект + монтаж)
                         </h5>
-                        <ul class="list-group list-group-flush ms-1 ms-xl-0">
-                          <li class="list-group-item mx-1 ps-4 border-0">Укладка межвенцового утеплителя</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Устройство стропильной системы</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Пере... межэтажный брус 150 на 200</li>
-                          <li class="list-group-item mx-1 ps-4 pt-1 border-0">Межвенцовый утеплитель (...)</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Стропила</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Обрешетка</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Нигеля березовые</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Сборка стенового комплекта</li>
-                          <li class="list-group-item mx-1 ps-4 pt-1 border-0">Монтаж балок пола</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Монтаж межэтажных балок</li>
-                          <li class="list-group-item mx-1 ps-4 border-0">Укладка гидро...</li>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item border-0 ps-3">Укладка межвенцового утеплителя</li>
+                          <li class="list-group-item border-0">Устройство стропильной системы</li>
+                          <li class="list-group-item border-0 pb-1">Пере... межэтажный брус 150 на 200</li>
+                          <li class="list-group-item border-0">Межвенцовый утеплитель (...)</li>
+                          <li class="list-group-item border-0">Стропила</li>
+                          <li class="list-group-item border-0">Обрешетка</li>
+                          <li class="list-group-item border-0">Нигеля березовые</li>
+                          <li class="list-group-item border-0">Сборка стенового комплекта</li>
+                          <li class="list-group-item border-0">Монтаж балок пола</li>
+                          <li class="list-group-item border-0">Монтаж межэтажных балок</li>
+                          <li class="list-group-item border-0">Укладка гидро...</li>
                         </ul>
                       </div>
-                      <div class="price-card price-card_optimal text-center bg-dark text-light
-                                  py-4 my-2 ms-xxl-4 me-xxl-0">
+                      <div class="price-card price-card_basic text-center text-white p-4">
                         2 300 000 руб.
                       </div>
                     </div>
@@ -235,7 +234,7 @@
             </section>
 
             <!-- доставка (delivery.scss) -->
-            <section class="mt-2 mt-lg-3 pt-lg-1 pt-xxl-4 px-xxl-3 mx-xxl-2">
+            <section class="mt-4 pt-2 mt-lg-3 pt-lg-1 pt-xxl-4 px-xxl-3 mx-xxl-2">
               <div class="delivery container-sm d-lg-flex flex-lg-column align-items-lg-center
                           px-3 pb-lg-5 pt-lg-3">
                 <h4 class="delivery__header pt-3 pb-2 pt-lg-4 pb-lg-1">Доставка</h4>
